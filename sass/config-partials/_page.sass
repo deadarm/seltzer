@@ -1,0 +1,20 @@
+//  _page.sass
+
+// Default to border box from Paul Irish
+*
+  +box-sizing("border-box")
+
+
+// Text selection defaults
+\::-moz-selection,
+\::selection
+  color: $white
+  background: $black
+  text-shadow: none
+
+// Body defaults
+body
+  font-family: $font-body
+  color: $text-color
+  background: $background-page
+  -webkit-font-smoothing: antialiased

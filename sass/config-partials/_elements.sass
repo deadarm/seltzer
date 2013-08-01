@@ -1,0 +1,64 @@
+// _elements.sass
+
+a
+  &:hover
+  &:active
+
+em, i
+
+b, strong
+
+pre
+  @extend %mono
+  line-height: 1
+  white-space: pre
+  white-space: pre-wrap
+  word-wrap: break-word
+
+p
+
+del
+  text-decoration: line-through
+
+ins
+
+dl
+  margin-left: 0
+
+ol
+  list-style: decimal
+
+ul,
+.item-list ul
+  list-style: none
+  li &
+    list-style-type: circle
+
+label, .label-inline
+
+small
+
+sup, sub
+  font-size: 75%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+
+sup
+  top: -0.5em
+
+sub
+  bottom: -0.25em
+
+cite
+
+q
+
+dfn
+
+abbr, acronym
+
+code, kbd, tt
+  @extend %mono
+
+mark

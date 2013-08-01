@@ -1,0 +1,21 @@
+name: Seltzer
+description: 'No-frills, sass-based drupal theme'
+core: 8.x
+version: 1.0
+stylesheets:
+  all:
+    - css/normalize.css
+    - css/style.css
+scripts:
+  - js/libs/jquery-2.0.3.min.js
+  - js/libs/modernizr.custom.32855.js
+regions:
+  navigation: Navigation
+  header: Header
+  content: Main content
+  sidebar_first: Sidebar first
+  help: Help
+  highlighted: Highlighted
+  content_bottom: Bottom content
+  footer: Footer
+  legal: Legal
