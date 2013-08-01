@@ -1,5 +1,6 @@
 name: Seltzer
 description: 'No-frills, sass-based drupal theme'
+type: theme
 core: 8.x
 version: 1.0
 stylesheets:
