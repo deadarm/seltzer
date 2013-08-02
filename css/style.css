@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* line 3, ../sass/base-partials/_extends.sass */
+pre, code, kbd, tt {
+  font-family: Consolas, Menlo, "Courier New", monospace, monospace;
+}
+
+/* line 3, ../sass/config-partials/_drupalisms.sass */
+.offscreenText {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  width: 0;
+}
+
+/* line 7, ../sass/config-partials/_drupalisms.sass */
+ul.menu {
+  margin: 0;
+  padding: 0;
+}
+/* line 10, ../sass/config-partials/_drupalisms.sass */
+ul.menu li {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 14, ../sass/config-partials/_drupalisms.sass */
+ul li.leaf,
+ul li.expanded,
+ul.menu li.collapsed {
+  list-style-image: none;
+  list-style-type: none;
+}
+
+/* line 21, ../sass/config-partials/_drupalisms.sass */
+.breadcrumb {
+  padding: 0;
+}
+
+/* line 25, ../sass/config-partials/_drupalisms.sass */
+.views-exposed-widgets {
+  margin: 0;
+}
+
+/* line 27, ../sass/config-partials/_drupalisms.sass */
+.views-exposed-form .views-exposed-widget {
+  padding: 0;
+}
+/* line 29, ../sass/config-partials/_drupalisms.sass */
+.views-exposed-form .views-exposed-widget .form-submit {
+  margin: 0;
+}
+
+/* line 42, ../sass/config-partials/_drupalisms.sass */
+div.label-inline {
+  display: inline-block;
+}
+
+/* line 47, ../sass/config-partials/_drupalisms.sass */
+.field-type-taxonomy-term-reference .field-item {
+  display: inline;
+}
+
+/* line 11, ../sass/config-partials/_elements.sass */
+pre {
+  line-height: 1;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 20, ../sass/config-partials/_elements.sass */
+del {
+  text-decoration: line-through;
+}
+
+/* line 25, ../sass/config-partials/_elements.sass */
+dl {
+  margin-left: 0;
+}
+
+/* line 28, ../sass/config-partials/_elements.sass */
+ol {
+  list-style: decimal;
+}
+
+/* line 31, ../sass/config-partials/_elements.sass */
+ul,
+.item-list ul {
+  list-style: none;
+}
+/* line 34, ../sass/config-partials/_elements.sass */
+li ul, li
+.item-list ul {
+  list-style-type: circle;
+}
+
+/* line 41, ../sass/config-partials/_elements.sass */
+sup, sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 47, ../sass/config-partials/_elements.sass */
+sup {
+  top: -0.5em;
+}
+
+/* line 50, ../sass/config-partials/_elements.sass */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 3, ../sass/config-partials/_tables.sass */
+table {
+  border: 0 !important;
+}
+
+/* line 10, ../sass/config-partials/_tables.sass */
+th,
+td {
+  border: 0;
+  padding: 0;
+}
+
+/* line 4, ../sass/config-partials/_page.sass */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 9, ../sass/config-partials/_page.sass */
+::-moz-selection,
+::selection {
+  color: white;
+  background: black;
+  text-shadow: none;
+}
+
+/* line 16, ../sass/config-partials/_page.sass */
+body {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  color: black;
+  background: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 3, ../sass/config-partials/_headers.sass */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  text-rendering: optimizeLegibility;
+}
