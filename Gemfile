@@ -1,6 +1,6 @@
 # Gemfile
 source "https://rubygems.org"
-gem "sass", ">=3.3.0alpha"
+gem "sass"
 gem "compass"
 gem "breakpoint", ">= 2.0"
 gem "singularitygs"
