@@ -17,6 +17,9 @@ javascripts_dir = "js"
 # Output style:
 # output_style = :expanded or :nested or :compact or :compressed
 
+# Debugging comments that display the original location of your selectors.
+line_comments = false
+
 # Relative paths to assets via compass helper functions.
 relative_assets = true
 

@@ -4,7 +4,7 @@
 // +font-face($name, $font-files, $eot, $weight, $style)
 // $font-files is required using font-files('relative/location', 'format'). For best results use this order: woff, opentype/truetype, svg
 
-+font-face("Grand Hotel", "GrandHotel-Regular.ttf")
++font-face("Grand Hotel", font-files("GrandHotel-Regular.ttf"))
 
 // Font stacks
 $font-sans: "Avant Garde", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif
@@ -12,8 +12,8 @@ $font-serif: Georgia, Times, "Times New Roman", serif
 $font-mono: Consolas, Menlo, "Courier New", monospace, monospace
 
 $font-header: "Grand Hotel", cursive
-$font-body: $font-serif
+$font-body: $font-sans
 
 // Font size
 $base-font-size: 16px
-$base-line-height: $base-font-size * 1
+$base-line-height: $base-font-size * 1.1
