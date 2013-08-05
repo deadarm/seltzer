@@ -4,12 +4,10 @@
   src: url('../fonts/GrandHotel-Regular.ttf') format('truetype');
 }
 
-/* line 3, ../sass/base-partials/_extends.sass */
 pre, code, kbd, tt {
   font-family: Consolas, Menlo, "Courier New", monospace, monospace;
 }
 
-/* line 3, ../sass/config-partials/_drupalisms.sass */
 .offscreenText {
   height: 0;
   margin: 0;
@@ -17,18 +15,15 @@ pre, code, kbd, tt {
   width: 0;
 }
 
-/* line 7, ../sass/config-partials/_drupalisms.sass */
 ul.menu {
   margin: 0;
   padding: 0;
 }
-/* line 10, ../sass/config-partials/_drupalisms.sass */
 ul.menu li {
   margin: 0;
   padding: 0;
 }
 
-/* line 14, ../sass/config-partials/_drupalisms.sass */
 ul li.leaf,
 ul li.expanded,
 ul.menu li.collapsed {
@@ -36,36 +31,29 @@ ul.menu li.collapsed {
   list-style-type: none;
 }
 
-/* line 21, ../sass/config-partials/_drupalisms.sass */
 .breadcrumb {
   padding: 0;
 }
 
-/* line 25, ../sass/config-partials/_drupalisms.sass */
 .views-exposed-widgets {
   margin: 0;
 }
 
-/* line 27, ../sass/config-partials/_drupalisms.sass */
 .views-exposed-form .views-exposed-widget {
   padding: 0;
 }
-/* line 29, ../sass/config-partials/_drupalisms.sass */
 .views-exposed-form .views-exposed-widget .form-submit {
   margin: 0;
 }
 
-/* line 42, ../sass/config-partials/_drupalisms.sass */
 .label-inline {
   display: inline-block;
 }
 
-/* line 47, ../sass/config-partials/_drupalisms.sass */
 .field-type-taxonomy-term-reference .field-item {
   display: inline;
 }
 
-/* line 11, ../sass/config-partials/_elements.sass */
 pre {
   line-height: 1;
   white-space: pre;
@@ -73,33 +61,27 @@ pre {
   word-wrap: break-word;
 }
 
-/* line 20, ../sass/config-partials/_elements.sass */
 del {
   text-decoration: line-through;
 }
 
-/* line 25, ../sass/config-partials/_elements.sass */
 dl {
   margin-left: 0;
 }
 
-/* line 28, ../sass/config-partials/_elements.sass */
 ol {
   list-style: decimal;
 }
 
-/* line 31, ../sass/config-partials/_elements.sass */
 ul,
 .item-list ul {
   list-style: none;
 }
-/* line 34, ../sass/config-partials/_elements.sass */
 li ul, li
 .item-list ul {
   list-style-type: circle;
 }
 
-/* line 41, ../sass/config-partials/_elements.sass */
 sup, sub {
   font-size: 75%;
   line-height: 0;
@@ -107,36 +89,30 @@ sup, sub {
   vertical-align: baseline;
 }
 
-/* line 47, ../sass/config-partials/_elements.sass */
 sup {
   top: -0.5em;
 }
 
-/* line 50, ../sass/config-partials/_elements.sass */
 sub {
   bottom: -0.25em;
 }
 
-/* line 3, ../sass/config-partials/_tables.sass */
 table {
   border: 0 !important;
 }
 
-/* line 10, ../sass/config-partials/_tables.sass */
 th,
 td {
   border: 0;
   padding: 0;
 }
 
-/* line 4, ../sass/config-partials/_page.sass */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 9, ../sass/config-partials/_page.sass */
 ::-moz-selection,
 ::selection {
   color: white;
@@ -144,7 +120,6 @@ td {
   text-shadow: none;
 }
 
-/* line 16, ../sass/config-partials/_page.sass */
 body {
   background: white;
   color: black;
@@ -155,7 +130,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 3, ../sass/config-partials/_headers.sass */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Grand Hotel", cursive;
   font-weight: normal;
@@ -163,42 +137,34 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
 }
 
-/* line 9, ../sass/config-partials/_headers.sass */
 h1, h2, h3 {
   line-height: 1.2;
 }
 
-/* line 12, ../sass/config-partials/_headers.sass */
 h4, h5, h6 {
   line-height: 1;
 }
 
-/* line 15, ../sass/config-partials/_headers.sass */
 h1 {
   font-size: 3em;
 }
 
-/* line 18, ../sass/config-partials/_headers.sass */
 h2 {
   font-size: 2.5em;
 }
 
-/* line 21, ../sass/config-partials/_headers.sass */
 h3 {
   font-size: 2em;
 }
 
-/* line 24, ../sass/config-partials/_headers.sass */
 h4 {
   font-size: 1.7em;
 }
 
-/* line 27, ../sass/config-partials/_headers.sass */
 h5 {
   font-size: 1.5em;
 }
 
-/* line 30, ../sass/config-partials/_headers.sass */
 h6 {
   font-size: 1.2em;
 }
