@@ -1,12 +1,20 @@
 // _elements.sass
 
-a
+a,
+a:visited,
+a:active
+  color: $red
+  text-decoration: none
   &:hover
+    color: $blue
   &:active
 
 em, i
+  font-family: $font-italic
+  font-weight: normal
 
 b, strong
+  font-family: $font-bold
 
 pre
   @extend %mono

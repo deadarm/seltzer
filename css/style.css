@@ -1,7 +1,51 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Grand Hotel";
-  src: url('../fonts/GrandHotel-Regular.ttf') format('truetype');
+  src: url('../fonts/normal');
+  src: url('../fonts/normal?#iefix') format('eot'), url('../fonts/GrandHotel-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url('../fonts/normal');
+  src: url('../fonts/normal?#iefix') format('eot'), url('../fonts/opensans/OpenSans-Light.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Light Italic";
+  src: url('../fonts/normal');
+  src: url('../fonts/normal?#iefix') format('eot'), url('../fonts/opensans/OpenSans-LightItalic.ttf') format('truetype');
+  font-weight: italic;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url('../fonts/normal');
+  src: url('../fonts/normal?#iefix') format('eot'), url('../fonts/opensans/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Italic";
+  src: url('../fonts/normal');
+  src: url('../fonts/normal?#iefix') format('eot'), url('../fonts/opensans/OpenSans-Italic.ttf') format('truetype');
+  font-weight: italic;
+}
+
+@font-face {
+  font-family: "Open Sans Extra Bold";
+  src: url('../fonts/bold');
+  src: url('../fonts/bold?#iefix') format('eot'), url('../fonts/opensans/OpenSans-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Extra Bold Italic";
+  src: url('../fonts/bold');
+  src: url('../fonts/bold?#iefix') format('eot'), url('../fonts/opensans/OpenSans-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: italic;
 }
 
 pre, code, kbd, tt {
@@ -52,6 +96,27 @@ ul.menu li.collapsed {
 
 .field-type-taxonomy-term-reference .field-item {
   display: inline;
+}
+
+a,
+a:visited,
+a:active {
+  color: #d33b47;
+  text-decoration: none;
+}
+a:hover,
+a:visited:hover,
+a:active:hover {
+  color: #316bce;
+}
+
+em, i {
+  font-family: "Open Sans Italic", "Avant Garde", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+b, strong {
+  font-family: "Open Sans Extra Bold", "Avant Garde", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 pre {
@@ -113,25 +178,35 @@ td {
   box-sizing: border-box;
 }
 
-::-moz-selection,
+::-moz-selection {
+  color: white;
+  background: #316bce;
+  text-shadow: none;
+}
+
 ::selection {
   color: white;
-  background: black;
+  background: #316bce;
   text-shadow: none;
 }
 
 body {
   background: white;
   color: black;
-  font-family: "Avant Garde", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Avant Garde", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 17.6px;
+  margin: 0;
   -webkit-font-smoothing: antialiased;
 }
 
+#page {
+  padding: 0 1rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Grand Hotel", cursive;
+  font-family: "Open Sans", "Avant Garde", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   margin: 0;
   text-rendering: optimizeLegibility;
