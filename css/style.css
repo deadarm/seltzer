@@ -101,13 +101,13 @@ ul.menu li.collapsed {
 a,
 a:visited,
 a:active {
-  color: #d33b47;
+  color: #e92401;
   text-decoration: none;
 }
 a:hover,
 a:visited:hover,
 a:active:hover {
-  color: #316bce;
+  color: #0084c5;
 }
 
 em, i {
@@ -180,13 +180,13 @@ td {
 
 ::-moz-selection {
   color: white;
-  background: #316bce;
+  background: #0084c5;
   text-shadow: none;
 }
 
 ::selection {
   color: white;
-  background: #316bce;
+  background: #0084c5;
   text-shadow: none;
 }
 
@@ -196,7 +196,7 @@ body {
   font-family: "Open Sans", "Avant Garde", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
-  line-height: 17.6px;
+  line-height: 20.8px;
   margin: 0;
   -webkit-font-smoothing: antialiased;
 }
