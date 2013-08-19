@@ -192,7 +192,7 @@ td {
 
 body {
   background: white;
-  color: black;
+  color: #2d2d2d;
   font-family: "Open Sans", "Avant Garde", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
@@ -201,10 +201,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-#page {
+#header,
+#main,
+#footer,
+#legal {
   margin: 0 auto;
-  max-width: 1024px;
-  padding: 0 1rem;
+  max-width: 48rem;
+  padding: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -244,4 +247,43 @@ h5 {
 
 h6 {
   font-size: 1.2em;
+}
+
+#main-menu {
+  float: right;
+}
+#main-menu li {
+  padding: 0;
+}
+#main-menu a {
+  color: black;
+  display: inline-block;
+  font-size: 1.2em;
+  height: 2em;
+  line-height: 2;
+  text-align: center;
+  text-transform: uppercase;
+  width: 5em;
+}
+#main-menu a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-decoration: underline;
+}
+
+#header-wrapper {
+  background-color: rgba(234, 211, 117, 0.2);
+  min-height: 7em;
+}
+
+#main-wrapper {
+  background-color: rgba(234, 211, 117, 0.1);
+}
+
+#logo {
+  max-width: 24rem;
+  position: absolute;
+}
+#logo img {
+  width: 100%;
 }
