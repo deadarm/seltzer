@@ -104,9 +104,8 @@ a:active {
   color: #0084c5;
   text-decoration: none;
 }
-a:hover,
-a:visited:hover,
-a:active:hover {
+
+a:hover {
   color: #e92401;
 }
 
