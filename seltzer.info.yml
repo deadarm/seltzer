@@ -7,12 +7,10 @@ stylesheets:
   all:
     - css/style.css
 regions:
-  navigation: Navigation
   header: Header
   content: Main content
   sidebar_first: Sidebar first
   help: Help
   highlighted: Highlighted
-  content_bottom: Bottom content
   footer: Footer
   legal: Legal

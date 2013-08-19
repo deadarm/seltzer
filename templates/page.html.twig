@@ -1,4 +1,4 @@
-  {#
+{#
 /**
  * @file
  * Seltzer's theme implementation to display a single page.
@@ -151,6 +151,10 @@
             {{ action_links }}
           </ul>
         {% endif %}
+      {{ page.highlighted }}
+        {% if highlighted %}
+          {{ highlighted }}
+        {% endif %}
       {{ page.content }}
       {{ feed_icons }}
     </section></main> <!-- /.section, /#content -->
@@ -159,12 +163,6 @@
       <div id="sidebar-first" class="column sidebar"><aside class="section">
         {{ page.sidebar_first }}
       </aside></div><!-- /.section, /#sidebar-first -->
-    {% endif %}
-
-    {% if page.sidebar_second %}
-      <div id="sidebar-second" class="column sidebar"><aside class="section">
-        {{ page.sidebar_second }}
-      </aside></div><!-- /.section, /#sidebar-second -->
     {% endif %}
 
   </div></div><!-- /#main, /#main-wrapper -->
@@ -178,5 +176,15 @@
    {% endif %}
 
   </footer></div> <!-- /.section, /#footer-wrapper -->
+
+  <div id="legal-wrapper"><footer class="section">
+
+    {% if page.legal %}
+      <div id="legal" role="contentinfo" class="clearfix">
+        {{ page.legal }}
+      </div> <!-- /#legal -->
+   {% endif %}
+
+  </footer></div> <!-- /.section, /#legal-wrapper -->
 
 </div></div> <!-- /#page, /#page-wrapper -->
