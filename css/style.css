@@ -112,11 +112,12 @@ a:active:hover {
 
 em, i {
   font-family: "Open Sans Italic", "Avant Garde", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-style: normal;
 }
 
 b, strong {
   font-family: "Open Sans Extra Bold", "Avant Garde", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
 }
 
 pre {
@@ -202,6 +203,7 @@ body {
 }
 
 #page {
+  max-width: 1024px;
   padding: 0 1rem;
 }
 
