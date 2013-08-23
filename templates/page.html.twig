@@ -133,13 +133,6 @@
     <main id="content" class="column" role="main"><section class="section">
       {% if page.highlighted %}<div id="highlighted">{{ page.highlighted }}</div>{% endif %}
       <a id="main-content"></a>
-      {{ title_prefix }}
-        {% if title %}
-          <h1 class="title" id="page-title">
-            {{ title }}
-          </h1>
-        {% endif %}
-      {{ title_suffix }}
         {% if tabs %}
           <nav class="tabs" role="navigation">
             {{ tabs }}
@@ -156,7 +149,6 @@
           {{ highlighted }}
         {% endif %}
       {{ page.content }}
-      {{ feed_icons }}
     </section></main> <!-- /.section, /#content -->
 
     {% if page.sidebar_first %}
@@ -167,24 +159,20 @@
 
   </div></div><!-- /#main, /#main-wrapper -->
 
-  <div id="footer-wrapper"><footer id="footer" class="section">
-
-    {% if page.footer %}
+  {% if page.footer %}
+    <div id="footer-wrapper"><footer id="footer" class="section">
       <div id="footer" role="contentinfo" class="clearfix">
         {{ page.footer }}
       </div> <!-- /#footer -->
-   {% endif %}
+    </footer></div> <!-- /.section, /#footer-wrapper -->
+  {% endif %}
 
-  </footer></div> <!-- /.section, /#footer-wrapper -->
-
-  <div id="legal-wrapper"><div id="legal" class="section">
-
-    {% if page.legal %}
+  {% if page.legal %}
+    <div id="legal-wrapper"><div id="legal" class="section">
       <div id="legal" role="contentinfo" class="clearfix">
         {{ page.legal }}
       </div> <!-- /#legal -->
-   {% endif %}
-
-  </div></div> <!-- /.section, /#legal-wrapper -->
+    </div></div> <!-- /.section, /#legal-wrapper -->
+  {% endif %}
 
 </div></div> <!-- /#page, /#page-wrapper -->
