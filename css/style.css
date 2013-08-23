@@ -48,6 +48,48 @@
   font-weight: italic;
 }
 
+@font-face {
+  font-family: "Klinic Slab";
+  src: url('../fonts/normal');
+  src: url('../fonts/normal?#iefix') format('eot'), url('../fonts/klinic/KlinicSlabBook.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Klinic Slab Italic";
+  src: url('../fonts/normal');
+  src: url('../fonts/normal?#iefix') format('eot'), url('../fonts/klinic/KlinicSlabBookIt.otf') format('opentype');
+  font-weight: italic;
+}
+
+@font-face {
+  font-family: "Klinic Slab Bold";
+  src: url('../fonts/bold');
+  src: url('../fonts/bold?#iefix') format('eot'), url('../fonts/klinic/KlinicSlabBold.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Klinic Slab Bold Italic";
+  src: url('../fonts/bold');
+  src: url('../fonts/bold?#iefix') format('eot'), url('../fonts/klinic/KlinicSlabBoldIt.otf') format('opentype');
+  font-weight: italic;
+}
+
+@font-face {
+  font-family: "Klinic Slab Light";
+  src: url('../fonts/normal');
+  src: url('../fonts/normal?#iefix') format('eot'), url('../fonts/klinic/KlinicSlabLight.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Klinic Slab Light";
+  src: url('../fonts/normal');
+  src: url('../fonts/normal?#iefix') format('eot'), url('../fonts/klinic/KlinicSlabLightIt.otf') format('opentype');
+  font-weight: italic;
+}
+
 pre, code, kbd, tt {
   font-family: Consolas, Menlo, "Courier New", monospace, monospace;
 }
@@ -211,7 +253,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", "Avant Garde", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Klinic Slab", Garamond, Georgia, Times, "Times New Roman", serif;
   font-weight: normal;
   margin: 0;
   text-rendering: optimizeLegibility;

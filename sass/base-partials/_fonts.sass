@@ -15,18 +15,24 @@
 +font-face("Open Sans Extra Bold", font-files("opensans/OpenSans-ExtraBold.ttf"), bold, normal)
 +font-face("Open Sans Extra Bold Italic", font-files("opensans/OpenSans-ExtraBoldItalic.ttf"), bold, italic)
 
-
+// Klinic
++font-face("Klinic Slab", font-files("klinic/KlinicSlabBook.otf"), normal, normal)
++font-face("Klinic Slab Italic", font-files("klinic/KlinicSlabBookIt.otf"), normal, italic)
++font-face("Klinic Slab Bold", font-files("klinic/KlinicSlabBold.otf"), bold, normal)
++font-face("Klinic Slab Bold Italic", font-files("klinic/KlinicSlabBoldIt.otf"), bold, italic)
++font-face("Klinic Slab Light", font-files("klinic/KlinicSlabLight.otf"), normal, normal)
++font-face("Klinic Slab Light", font-files("klinic/KlinicSlabLightIt.otf"), normal, italic)
 
 // Font stacks
 $font-sans: "Open Sans", "Avant Garde", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif
-$font-serif: Georgia, Times, "Times New Roman", serif
+$font-serif: "Klinic Slab", Garamond, Georgia, Times, "Times New Roman", serif
 $font-mono: Consolas, Menlo, "Courier New", monospace, monospace
 $font-cursive: "Grand Hotel", cursive
 
 $font-bold: "Open Sans Extra Bold", "Avant Garde", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif
 $font-italic: "Open Sans Italic", "Avant Garde", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif
 
-$font-header: $font-sans
+$font-header: $font-serif
 $font-body: $font-sans
 
 // Font size
