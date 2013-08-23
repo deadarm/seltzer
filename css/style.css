@@ -320,6 +320,7 @@ h6 {
 }
 
 #main-menu {
+  display: inline;
   float: right;
 }
 @media (max-width: 320px) {
