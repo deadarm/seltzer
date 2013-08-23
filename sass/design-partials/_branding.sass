@@ -1,15 +1,21 @@
 // _branding.sass
 
 #header-wrapper
-  background-color: rgba($gold, 0.2)
+  background-color: rgba($grey-2, 0.1)
+  border-bottom: 1px solid rgba($grey-2, 0.3)
   min-height: 7em
 
 #main-wrapper
-  background-color: rgba($gold, 0.1)
+  border-top: 1px solid rgba($grey-2, 0.2)
 
 #logo
   max-width: 24rem
   position: absolute
   img
     width: 100%
+    +opacity(0.3)
+    &:hover
+      +opacity(0.5)
+  +breakpoint($phone-port)
+    position: initial
 

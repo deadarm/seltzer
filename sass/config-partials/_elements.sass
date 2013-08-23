@@ -25,6 +25,8 @@ pre
   word-wrap: break-word
 
 p
+  a:hover
+    text-decoration: underline
 
 del
   text-decoration: line-through
@@ -40,10 +42,21 @@ ol
 ul,
 .item-list ul
   list-style: none
-  li &
-    list-style-type: circle
+
+.view-content
+  ul,
+  .item-list ul
+    li:before
+      color: $red
+      content: "•"
+      font-size: 1.5em
+      position: relative
+      top: 0.1em
+      right: 0.15em
 
 label, .label-inline
+  display: inline-block
+
 
 small
 
@@ -71,3 +84,11 @@ code, kbd, tt
   @extend %mono
 
 mark
+
+hr
+  border: 1px solid $grey-9
+
+blockquote
+  border-left: 3px solid $gold
+  font-family: $font-bolditalic
+  padding-left: 1em

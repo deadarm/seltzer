@@ -2,18 +2,24 @@
 
 #main-menu
   float: right
+  +breakpoint($phone-port)
+    float: none
   li
     padding: 0
   a
-    color: $black
+    color: rgba($red, 0.9)
     display: inline-block
+    font-family: $font-bold
     font-size: 1.2em
     height: 2em
     line-height: 2
     text-align: center
     text-transform: uppercase
     width: 5em
-    &:hover
-      background-color: rgba($black, 0.8)
-      color: $white
-      text-decoration: underline
+    +breakpoint($screen-min)
+      &:hover
+        background-color: rgba($black, 0.8)
+        color: $white
+        text-decoration: underline
+    +breakpoint($phone-port)
+      text-align: left
