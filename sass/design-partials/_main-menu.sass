@@ -1,26 +1,20 @@
 // _main-menu.sass
 
 #main-menu
-  display: inline
-  float: right
+  margin: 0 auto
   +breakpoint($phone-port)
-    float: none
+    position: initial
   li
     padding: 0
   a
-    color: rgba($red, 0.9)
+    color: $black
     display: inline-block
-    font-family: $font-bold
+    font-family: "Klinic Slab Bold"
     font-size: 1.2em
     height: 2em
-    line-height: 2
-    text-align: center
+    line-height: 1.5
+    padding: 0 1em
     text-transform: uppercase
-    width: 5em
     +breakpoint($screen-min)
       &:hover
-        background-color: rgba($black, 0.8)
-        color: $white
-        text-decoration: underline
-    +breakpoint($phone-port)
-      text-align: left
+        background-color: rgba($grey-e, 0.8)

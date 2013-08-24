@@ -84,7 +84,7 @@
 }
 
 @font-face {
-  font-family: "Klinic Slab Light";
+  font-family: "Klinic Slab Light Italic";
   src: url('../fonts/normal');
   src: url('../fonts/normal?#iefix') format('eot'), url('../fonts/klinic/KlinicSlabLightIt.otf') format('opentype');
   font-weight: italic;
@@ -191,6 +191,7 @@ ol {
 ul,
 .item-list ul {
   list-style: none;
+  margin: 0;
 }
 
 .view-content ul li:before,
@@ -261,7 +262,7 @@ td {
 }
 
 body {
-  background: white;
+  background: #fafafa;
   color: #2d2d2d;
   font-family: "Open Sans", "Avant Garde", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
@@ -278,6 +279,12 @@ body {
   margin: 0 auto;
   max-width: 48rem;
   padding: 1rem;
+}
+
+#main,
+#footer,
+#legal {
+  background-color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -320,43 +327,33 @@ h6 {
 }
 
 #main-menu {
-  display: inline;
-  float: right;
+  margin: 0 auto;
 }
 @media (max-width: 320px) {
   #main-menu {
-    float: none;
+    position: initial;
   }
 }
 #main-menu li {
   padding: 0;
 }
 #main-menu a {
-  color: rgba(233, 36, 1, 0.9);
+  color: black;
   display: inline-block;
-  font-family: "Open Sans Extra Bold", "Avant Garde", Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Klinic Slab Bold";
   font-size: 1.2em;
   height: 2em;
-  line-height: 2;
-  text-align: center;
+  line-height: 1.5;
+  padding: 0 1em;
   text-transform: uppercase;
-  width: 5em;
 }
 @media (min-width: 1025px) {
   #main-menu a:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    text-decoration: underline;
-  }
-}
-@media (max-width: 320px) {
-  #main-menu a {
-    text-align: left;
+    background-color: rgba(238, 238, 238, 0.8);
   }
 }
 
 #header-wrapper {
-  background-color: rgba(45, 45, 45, 0.1);
   border-bottom: 1px solid rgba(45, 45, 45, 0.3);
   min-height: 7em;
 }
@@ -366,20 +363,16 @@ h6 {
 }
 
 #logo {
-  max-width: 24rem;
-  position: absolute;
+  display: block;
+  text-align: center;
 }
 #logo img {
+  max-width: 24rem;
   width: 100%;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
-  opacity: 0.3;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
 }
 #logo img:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
-}
-@media (max-width: 320px) {
-  #logo {
-    position: initial;
-  }
 }
