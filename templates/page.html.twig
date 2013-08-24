@@ -75,44 +75,20 @@
 
   <header id="header-wrapper" role="banner"><div id="header" class="section clearfix">
 
+    {% if main_menu %}
+      <nav id ="main-menu" class="navigation" role="navigation">
+        {{ main_menu }}
+      </nav> <!-- /#main-menu -->
+    {% endif %}
+
     {% if logo %}
       <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home" id="logo">
         <img src="{{ logo }}" alt="{{ 'Home'|t }}" />
       </a>
     {% endif %}
 
-    {% if site_name or site_slogan %}
-      <div id="name-and-slogan"{% if hide_site_name and hide_site_slogan %} class="visually-hidden"{% endif %}>
-        {% if site_name %}
-          {% if title %}
-            <div id="site-name"{% if hide_site_name %} class="visually-hidden"{% endif %}>
-              <strong>
-                <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home"><span>{{ site_name }}</span></a>
-              </strong>
-            </div>
-          {# Use h1 when the content title is empty #}
-          {% else %}
-            <h1 id="site-name"{% if hide_site_name %} class="visually-hidden" {% endif %}>
-              <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home"><span>{{ site_name }}</span></a>
-            </h1>
-          {% endif %}
-        {% endif %}
-
-        {% if site_slogan %}
-          <div id="site-slogan"{% if hide_site_slogan %} class="visually-hidden"{% endif %}>
-            {{ site_slogan }}
-          </div>
-        {% endif %}
-      </div><!-- /#name-and-slogan -->
-    {% endif %}
-
     {{ page.header }}
 
-    {% if main_menu %}
-      <nav id ="main-menu" class="navigation" role="navigation">
-        {{ main_menu }}
-      </nav> <!-- /#main-menu -->
-    {% endif %}
   </div></header> <!-- /.section, /#header-->
 
   {% if messages %}

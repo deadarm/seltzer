@@ -1,19 +1,19 @@
 // _main-menu.sass
 
 #main-menu
-  margin: 0 auto
-  +breakpoint($phone-port)
-    position: initial
+  padding-bottom: 1rem
   li
+    display: inline-block
     padding: 0
+    text-align: center
+    width: 25%
   a
     color: $black
     display: inline-block
     font-family: "Klinic Slab Bold"
     font-size: 1.2em
-    height: 2em
     line-height: 1.5
-    padding: 0 1em
+    padding: 0 0.5em
     text-transform: uppercase
     +breakpoint($screen-min)
       &:hover
