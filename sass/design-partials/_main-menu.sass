@@ -8,6 +8,7 @@
     text-align: center
     width: 25%
   a
+    border: 1px solid transparent
     color: $black
     display: inline-block
     font-family: "Klinic Slab Bold"
@@ -18,3 +19,6 @@
     +breakpoint($screen-min)
       &:hover
         background-color: rgba($grey-e, 0.8)
+        border: 1px solid $white
+        color: rgba($black, 0.7)
+        text-decoration: underline

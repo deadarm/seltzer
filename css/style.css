@@ -94,6 +94,16 @@ pre, code, kbd, tt {
   font-family: Consolas, Menlo, "Courier New", monospace, monospace;
 }
 
+.comment-add a {
+  background-color: #e92401;
+  display: inline-block;
+  margin: 1em 0;
+  padding: 0.7em;
+}
+.comment-add a:hover {
+  background-color: #ead375;
+}
+
 .offscreenText {
   height: 0;
   margin: 0;
@@ -172,6 +182,9 @@ pre {
   word-wrap: break-word;
 }
 
+p {
+  margin: 0;
+}
 p a:hover {
   text-decoration: underline;
 }
@@ -234,6 +247,11 @@ blockquote {
   padding-left: 1em;
 }
 
+.node-article.view-mode-full .content {
+  background-color: white;
+  padding: 0.5rem;
+}
+
 table {
   border: 0 !important;
 }
@@ -280,12 +298,6 @@ body {
   margin: 0 auto;
   max-width: 48rem;
   padding: 1rem;
-}
-
-#main,
-#footer,
-#legal {
-  background-color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -337,6 +349,7 @@ h6 {
   width: 25%;
 }
 #main-menu a {
+  border: 1px solid transparent;
   color: black;
   display: inline-block;
   font-family: "Klinic Slab Bold";
@@ -348,6 +361,9 @@ h6 {
 @media (min-width: 1025px) {
   #main-menu a:hover {
     background-color: rgba(238, 238, 238, 0.8);
+    border: 1px solid white;
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: underline;
   }
 }
 
@@ -373,4 +389,16 @@ h6 {
 #logo img:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
+}
+
+.comment-add a {
+  color: white;
+}
+
+.comment-wrapper {
+  margin-top: 1em;
+}
+
+.comment {
+  margin: 1rem 0;
 }
