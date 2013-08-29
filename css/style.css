@@ -349,13 +349,13 @@ h6 {
 }
 
 #main-menu {
-  padding-bottom: 1rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
 }
 #main-menu li {
   display: inline-block;
   padding: 0;
-  text-align: center;
-  width: 25%;
 }
 #main-menu a {
   border: 1px solid transparent;
