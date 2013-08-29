@@ -291,7 +291,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-#header,
+#header {
+  margin: 0 auto;
+  max-width: 48rem;
+}
+
 #main,
 #footer,
 #legal {
@@ -317,22 +321,27 @@ h4, h5, h6 {
 
 h1 {
   font-size: 2.8em;
+  margin: 0.8rem 0;
 }
 
 h2 {
   font-size: 2.3em;
+  margin: 0.5rem 0;
 }
 
 h3 {
   font-size: 2em;
+  margin: 0.3rem 0;
 }
 
 h4 {
   font-size: 1.7em;
+  margin: 0.2rem 0;
 }
 
 h5 {
   font-size: 1.5em;
+  margin: 0.1rem 0;
 }
 
 h6 {
@@ -355,19 +364,19 @@ h6 {
   font-family: "Klinic Slab Bold";
   font-size: 1.2em;
   line-height: 1.5;
-  padding: 0 0.5em;
+  padding: 0 2em;
   text-transform: uppercase;
 }
 @media (min-width: 1025px) {
   #main-menu a:hover {
-    background-color: rgba(238, 238, 238, 0.8);
+    background-color: rgba(234, 211, 117, 0.5);
     border: 1px solid white;
-    color: rgba(0, 0, 0, 0.7);
     text-decoration: underline;
   }
 }
 
 #header-wrapper {
+  border-top: 12px solid #0084c5;
   border-bottom: 1px solid rgba(45, 45, 45, 0.3);
   min-height: 7em;
 }
@@ -383,12 +392,33 @@ h6 {
 #logo img {
   max-width: 24rem;
   width: 100%;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
-}
-#logo img:hover {
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
+}
+#logo img:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=99);
+  opacity: 0.99;
+}
+
+.spot {
+  -webkit-border-radius: 50rem;
+  -moz-border-radius: 50rem;
+  -ms-border-radius: 50rem;
+  -o-border-radius: 50rem;
+  border-radius: 50rem;
+  background-color: rgba(234, 211, 117, 0.5);
+  height: 40rem;
+  width: 40rem;
+  position: absolute;
+  z-index: -999;
 }
 
 .comment-add a {
