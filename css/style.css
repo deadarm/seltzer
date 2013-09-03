@@ -145,8 +145,13 @@ ul.menu li.collapsed {
 .field-name-field-tags {
   margin-bottom: 1rem;
 }
-.field-name-field-tags a {
-  padding-left: 0.5em;
+.field-name-field-tags .field-item:after {
+  content: ",";
+  padding-right: 0.5em;
+}
+.field-name-field-tags .field-item:last-of-type:after {
+  content: "";
+  padding-right: 0;
 }
 
 .label-inline {
@@ -202,6 +207,10 @@ dl {
 
 ol {
   list-style: decimal;
+}
+
+ul.inline li {
+  padding: 0;
 }
 
 ul,
