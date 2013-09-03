@@ -142,8 +142,11 @@ ul.menu li.collapsed {
   margin: 0;
 }
 
-.tags a {
-  padding-left: 0.2em;
+.field-name-field-tags {
+  margin-bottom: 1rem;
+}
+.field-name-field-tags a {
+  padding-left: 0.5em;
 }
 
 .label-inline {
@@ -249,7 +252,10 @@ blockquote {
 
 .node-article.view-mode-full .content {
   background-color: white;
-  padding: 0.5rem;
+  padding: 1rem;
+}
+.node-article.view-mode-full .content p {
+  margin-bottom: 1rem;
 }
 
 table {
