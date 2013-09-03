@@ -211,8 +211,8 @@ ul,
   padding: 0;
 }
 
-.view-content ul li:before,
-.view-content .item-list ul li:before {
+.field-name-body ul li:before,
+.field-name-body .item-list ul li:before {
   color: #e92401;
   content: "•";
   font-size: 1.5em;
