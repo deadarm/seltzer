@@ -1,0 +1,9 @@
+id: seltzer_no_time
+uuid: 650f7d4e-e265-4c39-9f00-e7e92cf6c40e
+label: 'No time'
+status: '1'
+langcode: en
+locked: '0'
+locales: {  }
+pattern:
+  php: 'F j, Y'
