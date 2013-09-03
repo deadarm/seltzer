@@ -1,1 +1,9 @@
 <?php
+
+/**
+ * Implements hook_preprocess_HOOK() for node.twig.html.
+ */
+function seltzer_preprocess_node(&$variables) {
+  $date = format_date($variables['node']->getCreatedTime(), 'no_time');
+  $variables['submitted'] = t('!username posted on !date', array('!username' => $variables['name'], '!date' => $date));
+}
