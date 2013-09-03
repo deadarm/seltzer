@@ -142,16 +142,11 @@ ul.menu li.collapsed {
   margin: 0;
 }
 
-.field-name-field-tags {
-  margin-bottom: 1rem;
-}
 .field-name-field-tags .field-item:after {
-  content: ",";
-  padding-right: 0.5em;
+  content: ", ";
 }
 .field-name-field-tags .field-item:last-of-type:after {
   content: "";
-  padding-right: 0;
 }
 
 .label-inline {
